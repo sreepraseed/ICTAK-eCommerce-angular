@@ -1,0 +1,56 @@
+<main class="adp-container">
+  <h1>Add New Product</h1>
+  <div class="form-container">
+    <form action="">
+      <div class="input-group mb-3">
+        <input
+          type="text"
+          name="prodid"
+          class="form-control"
+          placeholder="Product ID"
+          aria-label="pid"
+          aria-describedby="basic-addon1"
+          [(ngModel)]="prodID"
+        />
+      </div>
+      <div class="input-group mb-3">
+        <input
+          type="text"
+          name="prodname"
+          class="form-control"
+          placeholder="Product Name"
+          aria-label="pname"
+          aria-describedby="basic-addon1"
+          [(ngModel)]="prodName"
+        />
+      </div>
+      <div class="input-group mb-3">
+        <input
+          type="text"
+          name="prodprice"
+          class="form-control"
+          placeholder="Product Price"
+          aria-label="pprice"
+          aria-describedby="basic-addon1"
+          [(ngModel)]="prodPrice"
+        />
+      </div>
+      <div class="input-group mb-3">
+        <input
+          type="text"
+          class="form-control"
+          name="prodqty"
+          placeholder="Product Quantity"
+          aria-label="pqty"
+          aria-describedby="basic-addon1"
+          [(ngModel)]="prodQty"
+        />
+      </div>
+      <div class="button-container">
+        <a class="btn btn-outline-warning" role="button" (click)="addProducts()"
+          ><i class="bi bi-cart-plus"></i>Add New Product</a
+        >
+      </div>
+    </form>
+  </div>
+</main>

@@ -1,0 +1,17 @@
+<div class="container card-container">
+  <div class="row">
+    <div class="col" *ngFor="let item of [].constructor(10); let i = index">
+      <div class="card" style="width: 18rem" *ngIf="i < 8">
+        <img src="{{prodList?.[i].image}}" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">{{prodList?.[i].title}}</h5>
+          <p class="card-text">${{prodList?.[i].price}}</p>
+          <a href="#" class="btn btn-danger"><i class="bi bi-heart"></i>Like</a>
+          <a href="#" class="btn btn-primary"
+            ><i class="bi bi-cart-plus"></i>Add to cart</a
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

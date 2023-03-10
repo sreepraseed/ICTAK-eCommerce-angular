@@ -1,0 +1,24 @@
+.adp-container {
+  height: 100vh;
+  width: 100vw;
+  background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.form-container {
+  width: 60%;
+}
+
+.button-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button-container a i {
+  padding-right: 5px;
+  font-size: 1.2rem;
+}
